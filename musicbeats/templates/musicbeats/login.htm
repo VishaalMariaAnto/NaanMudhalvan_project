@@ -1,0 +1,33 @@
+{%extends 'musicbeats/basic.htm'%}
+{% block title%}Login{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card bg-secondary text-light">
+        <div class="card-header" style="background-color: #add8e6;"> <!-- Light blue background -->
+          <h3 class="text-center">Login</h3>
+        </div>
+        <div class="card-body">
+          <form action="/musicbeats/login" method="POST">{% csrf_token %}
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="text-light">Username</label>
+              <input type="text" class="form-control bg-dark text-light" id="exampleInputEmail1"
+                aria-describedby="emailHelp" name="username" placeholder="Your Username">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="text-light">Password</label>
+              <input type="password" class="form-control bg-dark text-light" id="exampleInputPassword1"
+                placeholder="Password" name="password">
+            </div>
+            <button type="submit" class="btn btn-light btn-block">Login</button> <!-- Light color button -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
