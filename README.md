@@ -9,5 +9,5 @@ run the commend "python manage.py runserver" in the terminal
 follow the localhost port provided by the server (ex: http://127.0.0.1:8000/)
 
 admin login:
-user name: abhi_murthy
-password: abhi2301
+user name: vishaal
+password: vma@2004
